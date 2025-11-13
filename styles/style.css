@@ -1,0 +1,62 @@
+/* Fuente Audiowide */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* font-family: "Audiowide", sans-serif; */
+
+body {
+    font-family: "Audiowide", sans-serif;
+    background-color: #0b1d3a;
+}
+
+h1 {
+    font-size: 60px;
+    color: #f9ca24;
+}
+
+h2 {
+    font-size: 40px;
+    color: #66fcf1;
+}
+
+h3 {
+    font-size: 24px;
+    color: #d6eaf8;
+    font-weight: bold;
+}
+
+p {
+    font-size: 19.2px;
+    color: #d6eaf8;
+}
+
+a {
+    font-size: 18px;
+    color: #1f8ef1;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #00b894;
+    text-decoration: none;
+}
+
+li {
+    color: #d6eaf8;
+    font-size: 18px;
+}
+
+table {
+    color: #d6eaf8;
+}
+
+th {
+    background-color: #1f8ef1;
+    color: #0b1d3a;
+}
+
+label {
+    color: #a7bcf7;
+    font-weight: bold;
+}
