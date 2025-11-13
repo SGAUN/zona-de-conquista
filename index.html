@@ -3,85 +3,113 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- BOOTSTRAP CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
         <!-- CSS -->
         <link rel="stylesheet" href="./styles/style.css" />
         <title>Inicio</title>
     </head>
     <body>
         <header>
-            <img src="./assets/img/logo.png" alt="" />
             <!-- Barra de navegacion -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="./pages/noticia.html">Noticia</a>
-                    </li>
-                    <li>
-                        <a href="./pages/personajes.html">Personajes</a>
-                    </li>
-                    <li>
-                        <a href="./pages/modos.html">Modos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/pre-registro.html">Pre-registro</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/logo.png" alt="" class="img-fluid logo-nav" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/noticia.html">Noticia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/personajes.html">Personajes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/modos.html">Modos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/pre-registro.html">Pre-registro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
-            <!-- Portada -->
-            <h1>Zona de Conquista</h1>
-            <h2>El destino de los Mundos te Espera</h2>
-            <p>Construí tu imperio desde cero...</p>
-            <p>Comandá ejércitos, fortificá tus dominios...</p>
-            <a href="#descripcion" class="boton">Conocé más</a>
-            <a href="./pages/pre-registro.html" class="boton">Pre-regístrate ahora</a>
-            <img src="./assets/img/portada.webp" alt="" />
+            <section>
+                <h1>Zona de Conquista</h1>
+                <h2>El destino de los Mundos te Espera</h2>
+                <p>Construí tu imperio desde cero...</p>
+                <p>Comandá ejércitos, fortificá tus dominios...</p>
+                <a href="#descripcion" class="boton">Conocé más</a>
+                <a href="./pages/pre-registro.html" class="boton">Pre-regístrate ahora</a>
+                <img src="./assets/img/portada.webp" alt="" />
+            </section>
 
-            <!-- Portada -->
-            <h2>Fundamentos del juego</h2>
-            <h3>El destino de los Mundos te Espera</h3>
-            <p>
-                Zona de Conquista es una experiencia estratégica en tiempo real donde cada jugador construye su imperio
-                desde cero. Recolectá recursos, desarrollá tecnologías y expandí tus dominios mientras enfrentás a otras
-                civilizaciones por el control total del mapa.
-            </p>
-            <img src="./assets/img/descripcion1.png" alt="" />
+            <section>
+                <h2>Fundamentos del juego</h2>
+                <h3>El destino de los Mundos te Espera</h3>
+                <p>
+                    Zona de Conquista es una experiencia estratégica en tiempo real donde cada jugador construye su
+                    imperio desde cero. Recolectá recursos, desarrollá tecnologías y expandí tus dominios mientras
+                    enfrentás a otras civilizaciones por el control total del mapa.
+                </p>
+                <img src="./assets/img/descripcion1.png" alt="" />
 
-            <h3>Batallas tácticas 4 vs 4</h3>
-            <p>
-                Comandá escuadras únicas en enfrentamientos intensos por zonas clave. Cada decisión cuenta:
-                posicionamiento, combinación de unidades y uso de poderes ancestrales definen el rumbo de la batalla. La
-                cooperación y la estrategia son esenciales para la victoria.
-            </p>
-            <img src="./assets/img/descripcion2.png" alt="" />
+                <h3>Batallas tácticas 4 vs 4</h3>
+                <p>
+                    Comandá escuadras únicas en enfrentamientos intensos por zonas clave. Cada decisión cuenta:
+                    posicionamiento, combinación de unidades y uso de poderes ancestrales definen el rumbo de la
+                    batalla. La cooperación y la estrategia son esenciales para la victoria.
+                </p>
+                <img src="./assets/img/descripcion2.png" alt="" />
 
-            <h3>Exploración, dominio y legado</h3>
-            <p>
-                Desde bosques místicos hasta fortalezas olvidadas, cada territorio ofrece ventajas únicas. Conquistalos,
-                fortificá tus fronteras y dejá tu marca en la historia. Zona de Conquista te desafía a liderar con
-                visión, adaptarte al entorno y forjar tu leyenda.
-            </p>
-            <img src="./assets/img/descripcion3.png" alt="" />
+                <h3>Exploración, dominio y legado</h3>
+                <p>
+                    Desde bosques místicos hasta fortalezas olvidadas, cada territorio ofrece ventajas únicas.
+                    Conquistalos, fortificá tus fronteras y dejá tu marca en la historia. Zona de Conquista te desafía a
+                    liderar con visión, adaptarte al entorno y forjar tu leyenda.
+                </p>
+                <img src="./assets/img/descripcion3.png" alt="" />
+            </section>
 
-            <!-- Zona de mapa -->
-            <h2>Mapa</h2>
-            <img src="./assets/img/mapa-del-juego.png" alt="" />
+            <section>
+                <!-- Zona de mapa -->
+                <h2>Mapa</h2>
+                <img src="./assets/img/mapa-del-juego.png" alt="" />
 
-            <h3>Reino del norte</h3>
-            <img src="./assets/img/reino-del-norte.png" alt="" />
+                <h3>Reino del norte</h3>
+                <img src="./assets/img/reino-del-norte.png" alt="" />
 
-            <h3>Imperio del Este</h3>
-            <img src="./assets/img/imperio-de-este.png" alt="" />
+                <h3>Imperio del Este</h3>
+                <img src="./assets/img/imperio-de-este.png" alt="" />
 
-            <h3>Archipiélago Oeste</h3>
-            <img src="./assets/img/archipielago-oeste.png" alt="" />
+                <h3>Archipiélago Oeste</h3>
+                <img src="./assets/img/archipielago-oeste.png" alt="" />
 
-            <h3>Selvas del sur</h3>
-            <img src="./assets/img/selvas-del-sur.png" alt="" />
+                <h3>Selvas del sur</h3>
+                <img src="./assets/img/selvas-del-sur.png" alt="" />
+            </section>
         </main>
         <footer>
             <h3>Contacto</h3>
@@ -97,5 +125,11 @@
                 <li>YouTube</li>
             </ul>
         </footer>
+        <!-- BOOTSTRAP JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

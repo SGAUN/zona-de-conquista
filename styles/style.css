@@ -60,3 +60,19 @@ label {
     color: #a7bcf7;
     font-weight: bold;
 }
+
+.logo-nav {
+    height: 50px; 
+    width: auto; 
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.4rem; 
+    color: #F0E68C; 
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFD700; 
+}
+
+
