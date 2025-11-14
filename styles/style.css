@@ -62,20 +62,21 @@ label {
 }
 
 .logo-nav {
-    height: 50px; 
-    width: auto; 
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
 }
 
 .navbar-nav .nav-link {
-    font-size: 1.4rem; 
-    color: #F0E68C; 
+    font-size: 1.4rem;
+    color: #f0e68c;
 }
 
 .navbar-nav .nav-link.active {
-    color: #FFD700; 
+    color: #ffd700;
 }
 
-.menu-button-text{
+.menu-button-text {
     color: #66fcf1;
     font-size: 1.6rem;
     border: 2px solid #66fcf1;
@@ -83,4 +84,8 @@ label {
 
 .nav-oscura {
     background-color: #050f1f;
+}
+
+.nav-link.active {
+    text-decoration: underline;
 }
