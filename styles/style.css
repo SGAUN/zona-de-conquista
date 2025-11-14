@@ -96,6 +96,7 @@ label {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .nav-fija {
     position: fixed;
     top: 0;
@@ -112,3 +113,28 @@ label {
     filter: brightness(80%);
     border-radius: 10px;
 }
+
+.footer-contenido {
+    background-color: #050f1f;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.contacto {
+    text-align: left;
+}
+.derechos {
+    text-align: center;
+}
+.redes {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.redes ul {
+    list-style: none;
+    text-align: left;
+    align-self: flex-start;
+}
+
