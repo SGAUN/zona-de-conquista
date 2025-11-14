@@ -97,12 +97,6 @@ label {
     background-repeat: no-repeat;
 }
 
-.nav-fija {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
 .contenido-portada {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
@@ -138,3 +132,19 @@ label {
     align-self: flex-start;
 }
 
+.contenedor-noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-version {
+    display: grid;
+    grid-template-columns: auto auto; 
+    justify-content: space-between; 
+}
+
+.color-fondo{
+    background-color: #1a2638;
+
+}
