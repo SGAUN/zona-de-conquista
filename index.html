@@ -17,7 +17,7 @@
     <body>
         <header>
             <!-- Barra de navegacion -->
-            <nav class="navbar navbar-expand-lg nav-oscura">
+            <nav class="navbar navbar-expand-lg nav-oscura nav-fija">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="./assets/img/logo.png" alt="" class="img-fluid logo-nav" />
@@ -39,7 +39,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/noticia.html">Noticia</a>
+                                <a class="nav-link" href="./pages/noticia.html">Noticias</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./pages/personajes.html">Personajes</a>
@@ -56,59 +56,141 @@
             </nav>
         </header>
         <main>
-            <section>
-                <h1>Zona de Conquista</h1>
-                <h2>El destino de los Mundos te Espera</h2>
-                <p>Construí tu imperio desde cero...</p>
-                <p>Comandá ejércitos, fortificá tus dominios...</p>
-                <a href="#descripcion" class="boton">Conocé más</a>
-                <a href="./pages/pre-registro.html" class="boton">Pre-regístrate ahora</a>
-                <img src="./assets/img/portada.webp" alt="" />
+            <section class="portada d-flex flex-column justify-content-center align-items-start text-white p-5 fluid">
+                <div class="contenido-portada">
+                    <h1>Zona de Conquista</h1>
+                    <h2>El destino de los Mundos te Espera</h2>
+                    <p>Construí tu imperio desde cero...</p>
+                    <p>Comandá ejércitos, fortificá tus dominios...</p>
+                    <a href="#descripcion" class="boton">Conocé más</a>
+                    <a href="./pages/pre-registro.html" class="boton">Pre-regístrate ahora</a>
+                </div>
+            </section>
+            <section class="container mt-5" id="descripcion">
+                <h2 class="text-center mb-5">Fundamentos del juego</h2>
+
+                <div class="row d-flex align-items-center mb-5">
+                    <div class="col-md-6">
+                        <h3 class="my-4">El destino de los Mundos te Espera</h3>
+                        <p>
+                            Zona de Conquista es una experiencia estratégica en tiempo real donde cada jugador construye
+                            su imperio desde cero. Recolectá recursos, desarrollá tecnologías y expandí tus dominios
+                            mientras enfrentás a otras civilizaciones por el control total del mapa.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/img/descripcion1.png" alt="" class="img-fluid img-filtro-redondeado" />
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-center mb-5">
+                    <div class="col-md-6 order-md-2">
+                        <h3 class="my-4">Batallas tácticas 4 vs 4</h3>
+                        <p>
+                            Comandá escuadras únicas en enfrentamientos intensos por zonas clave. Cada decisión cuenta:
+                            posicionamiento, combinación de unidades y uso de poderes ancestrales definen el rumbo de la
+                            batalla. La cooperación y la estrategia son esenciales para la victoria.
+                        </p>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <img src="./assets/img/descripcion2.png" alt="" class="img-fluid img-filtro-redondeado" />
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-center mb-5">
+                    <div class="col-md-6">
+                        <h3 class="my-4">Exploración, dominio y legado</h3>
+                        <p>
+                            Desde
+                            <strong>bosques místicos</strong>
+                            hasta
+                            <strong>fortalezas olvidadas</strong>
+                            , cada territorio ofrece ventajas únicas. Conquistalos, fortificá tus fronteras y dejá tu
+                            marca en la historia. Zona de Conquista te desafía a liderar con visión, adaptarte al
+                            entorno y forjar tu leyenda.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/img/descripcion3.png" alt="" class="img-fluid img-filtro-redondeado" />
+                    </div>
+                </div>
             </section>
 
-            <section>
-                <h2>Fundamentos del juego</h2>
-                <h3>El destino de los Mundos te Espera</h3>
-                <p>
-                    Zona de Conquista es una experiencia estratégica en tiempo real donde cada jugador construye su
-                    imperio desde cero. Recolectá recursos, desarrollá tecnologías y expandí tus dominios mientras
-                    enfrentás a otras civilizaciones por el control total del mapa.
-                </p>
-                <img src="./assets/img/descripcion1.png" alt="" />
+            <section class="container">
+                <h2 class="text-center mb-5">Mapa</h2>
+                <figure class="figure"></figure>
 
-                <h3>Batallas tácticas 4 vs 4</h3>
-                <p>
-                    Comandá escuadras únicas en enfrentamientos intensos por zonas clave. Cada decisión cuenta:
-                    posicionamiento, combinación de unidades y uso de poderes ancestrales definen el rumbo de la
-                    batalla. La cooperación y la estrategia son esenciales para la victoria.
-                </p>
-                <img src="./assets/img/descripcion2.png" alt="" />
-
-                <h3>Exploración, dominio y legado</h3>
-                <p>
-                    Desde bosques místicos hasta fortalezas olvidadas, cada territorio ofrece ventajas únicas.
-                    Conquistalos, fortificá tus fronteras y dejá tu marca en la historia. Zona de Conquista te desafía a
-                    liderar con visión, adaptarte al entorno y forjar tu leyenda.
-                </p>
-                <img src="./assets/img/descripcion3.png" alt="" />
-            </section>
-
-            <section>
-                <!-- Zona de mapa -->
-                <h2>Mapa</h2>
-                <img src="./assets/img/mapa-del-juego.png" alt="" />
-
-                <h3>Reino del norte</h3>
-                <img src="./assets/img/reino-del-norte.png" alt="" />
-
-                <h3>Imperio del Este</h3>
-                <img src="./assets/img/imperio-de-este.png" alt="" />
-
-                <h3>Archipiélago Oeste</h3>
-                <img src="./assets/img/archipielago-oeste.png" alt="" />
-
-                <h3>Selvas del sur</h3>
-                <img src="./assets/img/selvas-del-sur.png" alt="" />
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="4"
+                            aria-label="Slide 5"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/mapa-del-juego.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/reino-del-norte.png" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/imperio-de-este.png" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/archipielago-oeste.png" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/selvas-del-sur.png" class="d-block w-100" alt="" />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </section>
         </main>
         <footer>
