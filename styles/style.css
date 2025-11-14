@@ -75,4 +75,12 @@ label {
     color: #FFD700; 
 }
 
+.menu-button-text{
+    color: #66fcf1;
+    font-size: 1.6rem;
+    border: 2px solid #66fcf1;
+}
 
+.nav-oscura {
+    background-color: #050f1f;
+}
