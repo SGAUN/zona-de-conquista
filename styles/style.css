@@ -2,16 +2,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 /* font-family: "Audiowide", sans-serif; */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: "Audiowide", sans-serif;
     background-color: #0b1d3a;
 }
 
+/*
+    ============================================
+    🎨 PALETA DE COLORES DEL PROYECTO
+    ============================================
+
+    --- Fondos Principales ---
+    Fondo (Body):     #0b1d3a (Azul oscuro principal)
+    Fondo (Nav/Footer): #050f1f (Azul muy oscuro / "casi negro")
+    Fondo (Cards):    #1a2638 (Azul grisáceo)
+
+    --- Tipografía (Títulos) ---
+    h1 (Dorado/Amarillo): #f9ca24
+    h2 (Cyan brillante):  #66fcf1
+    h3 (Azul pálido):     #d6eaf8
+
+    --- Tipografía (Cuerpo) ---
+    Texto (p, li, table): #d6eaf8 (El mismo que h3)
+    Labels (form):        #a7bcf7
+
+    --- Colores de Acentos (Links) ---
+    Links (a):            #1f8ef1 (Azul brillante)
+    Nav Link:             #f0e68c (Khaki claro)
+    Nav Link (Active):    #ffd700 (Dorado más brillante)
+
+    breakpoints:
+
+*/
+
 h1 {
     font-size: 60px;
     color: #f9ca24;
 }
-
 h2 {
     font-size: 40px;
     color: #66fcf1;
@@ -26,45 +58,38 @@ h3 {
     font-weight: bold;
     text-decoration: underline;
 }
-
 p {
     font-size: 19.2px;
     color: #d6eaf8;
 }
-
 a {
     font-size: 18px;
     color: #1f8ef1;
 }
-
 nav ul {
     list-style: none;
 }
-
 nav ul li a {
     color: #00b894;
     text-decoration: none;
 }
-
 li {
     color: #d6eaf8;
     font-size: 18px;
 }
-
 table {
     color: #d6eaf8;
 }
-
 th {
     background-color: #1f8ef1;
     color: #0b1d3a;
 }
-
 label {
     color: #a7bcf7;
     font-weight: bold;
 }
 
+/* (todas): Barra de navegacion */
 .logo-nav {
     height: 50px;
     width: auto;
@@ -93,25 +118,8 @@ label {
 .nav-link.active {
     text-decoration: underline;
 }
-.portada {
-    background-image: url("../assets/img/portada.png");
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.contenido-portada {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.img-filtro-redondeado {
-    filter: brightness(80%);
-    border-radius: 10px;
-}
-
+/* (todas)Pie de pagina */
 .footer-contenido {
     background-color: #050f1f;
     padding: 20px;
@@ -129,11 +137,46 @@ label {
     flex-direction: column;
     align-items: flex-end;
 }
-
 .redes ul {
     list-style: none;
     text-align: left;
     align-self: flex-start;
+}
+.contenido-portada {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Otros */
+.img-oscurecer {
+    background-color: hsla(0, 0%, 0%, 0.25);
+    background-blend-mode: darken;
+}
+
+/* (Home): Portada de inicio */
+.portada {
+    background-image: url("../assets/img/portada.png");
+    height: 880px;
+    background-size: cover;
+    background-position: top;
+}
+.portada__boton {
+    background-color: #0b1d3a;
+    border-color: #f9ca24;
+    color: #f9ca24;
+}
+.portada__boton:hover {
+    background-color: #0b1d3a;
+    border-color: #66fcf1;
+    color: #66fcf1;
+    text-decoration: underline;
+}
+
+/* (Home): Descripcion */
+.descripcion__imagen {
+    filter: brightness(80%);
+    border-radius: 10px;
 }
 
 .contenedor-noticia {

@@ -15,9 +15,10 @@
         <title>Inicio</title>
     </head>
     <body>
+        <!-- header: Encabezado -->
         <header>
             <!-- Barra de navegacion -->
-            <nav class="navbar navbar-expand-lg nav-oscura ">
+            <nav class="navbar navbar-expand-lg nav-oscura">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="./assets/img/logo.png" alt="" class="img-fluid logo-nav" />
@@ -55,18 +56,24 @@
                 </div>
             </nav>
         </header>
+
+        <!-- main: Contenido principal -->
         <main>
-            <section class="portada d-flex flex-column justify-content-center align-items-start text-white p-5 fluid">
-                <div class="contenido-portada">
+            <!-- Portada -->
+            <section class="portada img-oscurecer d-flex justify-content-center align-items-start flex-column">
+                <div class="container-fluid">
                     <h1>Zona de Conquista</h1>
                     <h2>El destino de los Mundos te Espera</h2>
                     <p>Construí tu imperio desde cero...</p>
                     <p>Comandá ejércitos, fortificá tus dominios...</p>
-                    <a href="#descripcion" class="boton">Conocé más</a>
-                    <a href="./pages/pre-registro.html" class="boton">Pre-regístrate ahora</a>
+                    <div class="btn-group">
+                        <a class="btn portada__boton btn-lg" href="#descripcion">Conocé más</a>
+                        <a class="btn portada__boton btn-lg" href="./pages/pre-registro.html">Pre-regístrate ahora</a>
+                    </div>
                 </div>
             </section>
 
+            <!-- Descripcion -->
             <section class="container mt-5" id="descripcion">
                 <h2 class="text-center mb-5">Fundamentos del juego</h2>
 
@@ -80,7 +87,7 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <img src="./assets/img/descripcion1.png" alt="" class="img-fluid img-filtro-redondeado" />
+                        <img class="descripcion__imagen img-fluid" src="./assets/img/descripcion1.png" alt="" />
                     </div>
                 </div>
 
@@ -94,7 +101,7 @@
                         </p>
                     </div>
                     <div class="col-md-6 order-md-1">
-                        <img src="./assets/img/descripcion2.png" alt="" class="img-fluid img-filtro-redondeado" />
+                        <img class="descripcion__imagen img-fluid" src="./assets/img/descripcion2.png" alt="" />
                     </div>
                 </div>
 
@@ -112,11 +119,12 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <img src="./assets/img/descripcion3.png" alt="" class="img-fluid img-filtro-redondeado" />
+                        <img class="descripcion__imagen img-fluid" src="./assets/img/descripcion3.png" alt="" />
                     </div>
                 </div>
             </section>
 
+            <!-- Mapa -->
             <section class="container">
                 <h2 class="text-center">Mapa</h2>
                 <figure class="figure"></figure>
@@ -195,6 +203,7 @@
             </section>
         </main>
 
+        <!-- footer: Pie de pagina -->
         <footer class="footer-contenido">
             <div class="contacto">
                 <h3>Contacto</h3>
@@ -218,6 +227,7 @@
                 </div>
             </div>
         </footer>
+
         <!-- BOOTSTRAP JS -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
