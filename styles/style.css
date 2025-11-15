@@ -111,14 +111,9 @@ label {
     border: 2px solid #66fcf1;
 }
 
-
-
 .nav-link.active {
     text-decoration: underline;
 }
-
-
-
 
 /* Otros */
 .img-oscurecer {
@@ -153,13 +148,11 @@ label {
     filter: brightness(80%);
     border-radius: 10px;
 }
-
 .contenedor-noticia {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .info-version {
     display: grid;
     grid-template-columns: auto auto;
@@ -184,3 +177,20 @@ label {
     border-radius: 0.25rem;
 }
 
+.portada-novedades {
+    background-image: url("../assets/img/novedades.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    min-height: 300px; 
+}
+
+.portada-correcciones-de-bug {
+    background-image: url("../assets/img/correcciones-de-bug.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    min-height: 300px; 
+}
