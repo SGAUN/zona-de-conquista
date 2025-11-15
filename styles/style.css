@@ -16,11 +16,15 @@ h2 {
     font-size: 40px;
     color: #66fcf1;
 }
-
+.estilo-subtitulo {
+    font-size: 40px;
+    color: #66fcf1;
+}
 h3 {
     font-size: 24px;
     color: #d6eaf8;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 p {
@@ -121,9 +125,9 @@ label {
     text-align: center;
 }
 .redes {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: flex-end; 
+    align-items: flex-end;
 }
 
 .redes ul {
@@ -140,11 +144,24 @@ label {
 
 .info-version {
     display: grid;
-    grid-template-columns: auto auto; 
-    justify-content: space-between; 
+    grid-template-columns: auto auto;
+    justify-content: space-between;
 }
 
-.color-fondo{
+.color-fondo {
     background-color: #1a2638;
+}
 
+.card-color {
+    background-color: #1a2638;
+}
+
+.img-contenedor {
+    height: 250px;
+}
+
+.img-contenedor img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.25rem;
 }
