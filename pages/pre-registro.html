@@ -17,7 +17,7 @@
     <body>
         <!-- header: Encabezado -->
         <header>
-            <nav class="navbar navbar-expand-lg fondo-oscuro-paneles">
+            <nav class="navbar navbar-expand-lg contenedor-fondo-oscuro">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="../assets/img/logo.png" alt="" class="img-fluid logo-nav" />
@@ -58,49 +58,59 @@
 
         <!-- main: Contenido principal -->
         <main>
-            <div class="container-fluid">
-                <h1>Pre-registro</h1>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2>Información de Registro</h2>
-                        <p>Regístrate para recibir acceso anticipado y desbloquear recompensas.</p>
-                        <form class="row g-3">
-                            <div class="col-6">
-                                <label for="inputNombre" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="inputNombre" />
-                            </div>
-                            <div class="col-6">
-                                <label for="inputEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" />
-                            </div>
-                            <div class="col-12">
-                                <label for="inputPais" class="form-label">País</label>
-                                <select id="inputPais" class="form-select">
-                                    <option selected>Elegir...</option>
-                                    <option>Argentina</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label for="inputComentario" class="form-label">Comentario</label>
-                                <textarea class="form-control" id="inputComentario" rows="4"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck" />
-                                    <label class="form-check-label" for="gridCheck">recibir notificaciones</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Registrarme</button>
-                            </div>
-                        </form>
-                    </div>
+            <section class="container-xxl">
+                <h1 class="mt-5 mb-5">Pre-registro</h1>
 
-                    <div class="col-lg-6">
-                        <div class="card border-dark color-fondo-tarjeta h-100">
+                <div class="row">
+                    <div class="col-xl-6 mb-3">
+                        <article class="border-dark contenedor-fondo-oscuro h-100 rounded">
+                            <form class="row p-4">
+                                <div class="col-12">
+                                    <h3 class="mb-4">Información de Registro</h3>
+                                    <p>Regístrate para recibir acceso anticipado y desbloquear recompensas.</p>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="inputNombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="inputNombre" />
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" />
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="inputPais" class="form-label">País</label>
+                                    <select id="inputPais" class="form-select">
+                                        <option selected>Elegir...</option>
+                                        <option>Argentina</option>
+                                        <option>Brasil</option>
+                                        <option>Chile</option>
+                                        <option>Colombia</option>
+                                        <option>México</option>
+                                        <option>Perú</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="inputComentario" class="form-label">Comentario</label>
+                                    <textarea class="form-control" id="inputComentario" rows="4"></textarea>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                        <label class="form-check-label" for="gridCheck">recibir notificaciones</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <button type="submit" class="btn btn-primary">Registrarme</button>
+                                </div>
+                            </form>
+                        </article>
+                    </div>
+                    <div class="col-xl-6 mb-3">
+                        <article class="card border-dark contenedor-fondo-oscuro h-100">
                             <img src="../assets/img/recompensa.png" class="card-img-top" alt="Modo 1" />
-                            <div class="card-body color-fondo-tarjeta">
-                                <h2>Recompensas</h2>
+                            <div class="card-body">
+                                <h3 class="mb-4">Recompensas</h3>
                                 <ul>
                                     <li>Skin legendaria exclusiva</li>
                                     <li>1000 cristales</li>
@@ -108,28 +118,28 @@
                                     <li>Título Pionero</li>
                                 </ul>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
 
         <!-- footer: Pie de pagina -->
-        <footer class="fondo-oscuro-paneles container-fluid mt-5 py-4">
+        <footer class="contenedor-fondo-oscuro container-fluid mt-5 py-4">
             <article class="row">
                 <div class="col-md-4 text-center text-md-start">
-                    <h3>Contacto</h3>
+                    <h4 class="mb-3">Contacto</h4>
                     <p>Teléfono: 12 3456-7890</p>
                     <p>Mail: ejemplo@ejemplo.com</p>
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <h3>Derechos de Autor</h3>
+                    <h4 class="mb-3">Derechos de Autor</h4>
                     <p>© 2025 Mi Proyecto. Todos los derechos reservados.</p>
                 </div>
 
                 <div class="col-md-4 text-center text-md-end">
-                    <h3>Redes</h3>
+                    <h4 class="mb-3">Redes</h4>
                     <ul class="list-unstyled">
                         <li><a href="">Instagram</a></li>
                         <li><a href="">Twitter</a></li>

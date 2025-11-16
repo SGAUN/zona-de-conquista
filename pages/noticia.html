@@ -17,7 +17,7 @@
     <body>
         <!-- header: Encabezado -->
         <header>
-            <nav class="navbar navbar-expand-lg fondo-oscuro-paneles">
+            <nav class="navbar navbar-expand-lg contenedor-fondo-oscuro">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="../assets/img/logo.png" alt="" class="img-fluid logo-nav" />
@@ -58,44 +58,48 @@
 
         <!-- main: Contenido principal -->
         <main>
-            <h1>Noticias</h1>
-            <section class="container-fluid">
-                <div class="card mb-3 color-fondo-tarjeta">
-                    <article class="row g-0">
-                        <div class="col-md-4 ">
-                            <div class="portada-novedades rounded-start"></div>
+            <!-- seccion: noticias -->
+            <section class="container-xxl">
+                <h1 class="mt-5 mb-5">Noticias</h1>
+
+                <!-- tarjetas cards -->
+                <article class="contenedor-fondo-oscuro card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <figure class="imagen-novedades fondo-cubrir-centrar rounded-start h-100 w-100"></figure>
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body contenedor-noticia">
-                                <div class="info-version">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="d-flex justify-content-between">
                                     <p>Versión 1.0</p>
                                     <p>01/01/2025</p>
                                 </div>
-                                <h2>Novedades</h2>
-                                <ul>
-                                    <li>Animaciones de salto mejoradas en zonas volcánicas</li>
-                                    <li>Audio sincronizado en cinemática inicial</li>
-                                    <li>Texturas restauradas en templos del Sur</li>
-                                    <li>Carga optimizada del mapa dinámico en regiones flotantes</li>
-                                    <li>Colisiones refinadas en cavernas cristalinas</li>
-                                </ul>
+                                <section>
+                                    <h3 class="mb-4">Novedades</h3>
+                                    <ul>
+                                        <li>Animaciones de salto mejoradas en zonas volcánicas</li>
+                                        <li>Audio sincronizado en cinemática inicial</li>
+                                        <li>Texturas restauradas en templos del Sur</li>
+                                        <li>Carga optimizada del mapa dinámico en regiones flotantes</li>
+                                        <li>Colisiones refinadas en cavernas cristalinas</li>
+                                    </ul>
+                                </section>
                             </div>
                         </div>
-                    </article>
-                </div>
-
-                <div class="card mb-3 color-fondo-tarjeta">
-                    <article class="row g-0">
+                    </div>
+                </article>
+                <article class="contenedor-fondo-oscuro card mb-3">
+                    <div class="row g-0">
                         <div class="col-md-4">
-                            <div class="portada-novedades rounded-start"></div>
+                            <figure class="imagen-novedades fondo-cubrir-centrar rounded-start h-100 w-100"></figure>
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body contenedor-noticia">
-                                <div class="info-version">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="d-flex justify-content-between">
                                     <p>Versión 1.1</p>
                                     <p>02/01/2025</p>
                                 </div>
-                                <h2>Novedades</h2>
+                                <h3 class="mb-4">Novedades</h3>
                                 <ul>
                                     <li>Interfaz de pre-registro mejorada</li>
                                     <li>Detección de colisiones ajustada en ciudades flotantes</li>
@@ -105,21 +109,20 @@
                                 </ul>
                             </div>
                         </div>
-                    </article>
-                </div>
-
-                <div class="card mb-3 color-fondo-tarjeta">
-                    <article class="row g-0">
+                    </div>
+                </article>
+                <article class="contenedor-fondo-oscuro card mb-3">
+                    <div class="row g-0">
                         <div class="col-md-4">
-                            <div class="portada-correcciones-de-bug rounded-start"></div>
+                            <figure class="imagen-correcciones-de-bug fondo-cubrir-centrar rounded-start h-100 w-100"></figure>
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body contenedor-noticia">
-                                <div class="info-version">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="d-flex justify-content-between">
                                     <p>Versión 1.2</p>
                                     <p>03/01/2025</p>
                                 </div>
-                                <h2>Correcciones de Bugs</h2>
+                                <h3 class="mb-4">Correcciones de Bugs</h3>
                                 <ul>
                                     <li>Error en el sistema de guardado automático corregido</li>
                                     <li>Carga de texturas mejorada en el Archipiélago Oeste</li>
@@ -129,34 +132,34 @@
                                 </ul>
                             </div>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
             </section>
         </main>
 
         <!-- footer: Pie de pagina -->
-        <footer class="fondo-oscuro-paneles container-fluid mt-5 py-4">
-            <article class="row">
+        <footer class="contenedor-fondo-oscuro container-fluid mt-5 py-4">
+            <div class="row">
                 <div class="col-md-4 text-center text-md-start">
-                    <h3>Contacto</h3>
+                    <h4 class="mb-3">Contacto</h4>
                     <p>Teléfono: 12 3456-7890</p>
                     <p>Mail: ejemplo@ejemplo.com</p>
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <h3>Derechos de Autor</h3>
+                    <h4 class="mb-3">Derechos de Autor</h4>
                     <p>© 2025 Mi Proyecto. Todos los derechos reservados.</p>
                 </div>
 
                 <div class="col-md-4 text-center text-md-end">
-                    <h3>Redes</h3>
+                    <h4 class="mb-3">Redes</h4>
                     <ul class="list-unstyled">
                         <li><a href="">Instagram</a></li>
                         <li><a href="">Twitter</a></li>
                         <li><a href="">YouTube</a></li>
                     </ul>
                 </div>
-            </article>
+            </div>
         </footer>
 
         <!-- BOOTSTRAP JS -->

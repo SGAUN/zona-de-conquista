@@ -9,37 +9,10 @@
 }
 body {
     font-family: "Audiowide", sans-serif;
-    background-color: #0b1d3a;
+    background-color: #061121;
 }
 
-/*
-    ============================================
-    🎨 PALETA DE COLORES DEL PROYECTO
-    ============================================
-
-    --- Fondos Principales ---
-    Fondo (Body):     #0b1d3a (Azul oscuro principal)
-    Fondo (Nav/Footer): #050f1f (Azul muy oscuro / "casi negro")
-    Fondo (Cards):    #1a2638 (Azul grisáceo)
-
-    --- Tipografía (Títulos) ---
-    h1 (Dorado/Amarillo): #f9ca24
-    h2 (Cyan brillante):  #66fcf1
-    h3 (Azul pálido):     #d6eaf8
-
-    --- Tipografía (Cuerpo) ---
-    Texto (p, li, table): #d6eaf8 (El mismo que h3)
-    Labels (form):        #a7bcf7
-
-    --- Colores de Acentos (Links) ---
-    Links (a):            #1f8ef1 (Azul brillante)
-    Nav Link:             #f0e68c (Khaki claro)
-    Nav Link (Active):    #ffd700 (Dorado más brillante)
-
-    breakpoints:
-    lg: 992px
-*/
-
+/* Propiedades de etiquetas principales */
 h1 {
     font-size: 60px;
     color: #f9ca24;
@@ -48,17 +21,18 @@ h2 {
     font-size: 40px;
     color: #66fcf1;
 }
-.estilo-subtitulo {
-    font-size: 40px;
-    color: #66fcf1;
-}
 h3 {
+    font-size: 40px;
+    color: #7cff44;
+}
+h4 {
     font-size: 24px;
     color: #d6eaf8;
     font-weight: bold;
     text-decoration: underline;
 }
-p {
+p,
+span {
     font-size: 19.2px;
     color: #d6eaf8;
 }
@@ -95,117 +69,74 @@ label {
     width: auto;
     border-radius: 10px;
 }
-
 .navbar-nav .nav-link {
     font-size: 1.4rem;
     color: #f0e68c;
 }
-
 .navbar-nav .nav-link.active {
     color: #ffd700;
 }
-
 .menu-button-text {
     color: #66fcf1;
     font-size: 1.6rem;
     border: 2px solid #66fcf1;
 }
-
 .nav-link.active {
     text-decoration: underline;
 }
 
-/* Otros */
+/* Utilidades */
 .img-oscurecer {
     background-color: hsla(0, 0%, 0%, 0.25);
     background-blend-mode: darken;
 }
-.fondo-oscuro-paneles {
-    background-color: #050f1f;
+.img-filtro-oscuro {
+    filter: brightness(80%);
+}
+.contenedor-fondo-oscuro {
+    background-color: #1a2638;
+}
+.fondo-cubrir-centrar {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* (Home): Portada de inicio */
-.portada {
+.img-portada {
     background-image: url("../assets/img/portada.png");
-    height: 880px;
+    height: 990px;
     background-size: cover;
-    background-position: top;
 }
-.portada__boton {
+.portada-boton {
     background-color: #0b1d3a;
     border-color: #f9ca24;
     color: #f9ca24;
 }
-.portada__boton:hover {
+.portada-boton:hover {
     background-color: #0b1d3a;
     border-color: #66fcf1;
     color: #66fcf1;
     text-decoration: underline;
 }
 
-/* (Home): Descripcion */
-.descripcion__imagen {
-    filter: brightness(80%);
-    border-radius: 10px;
-}
-.contenedor-noticia {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.info-version {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-}
-
-.color-fondo-tarjeta {
-    background-color: #1a2638;
-}
-
-.img-contenedor {
-    height: 250px;
-}
-
-.img-contenedor img {
-    height: 100%;
-    width: 100%;
-    border-radius: 0.25rem;
-}
-
-.portada-novedades {
+/* (noticia): url de imagenes  */
+.imagen-novedades {
     background-image: url("../assets/img/novedades.png");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    min-height: 300px; 
+    min-height: 300px;
 }
-
-.portada-correcciones-de-bug {
+.imagen-correcciones-de-bug {
     background-image: url("../assets/img/correcciones-de-bug.png");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    min-height: 300px; 
+    min-height: 300px;
 }
 
-.thalor {
+/* (personajes): url de imagenes */
+.imagen-thalor {
     background-image: url("../assets/img/thalor.png");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    min-height: 300px; 
+    min-height: 300px;
+}
+.imagen-lunara {
+    background-image: url("../assets/img/lunara.png");
+    min-height: 300px;
 }
 
-.imagen-recompensa {
-    background-image: url("../assets/img/recompensa.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    min-height: 300px; 
-}
