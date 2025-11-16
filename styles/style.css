@@ -120,7 +120,7 @@ label {
     background-color: hsla(0, 0%, 0%, 0.25);
     background-blend-mode: darken;
 }
-.fondo-oscuro {
+.fondo-oscuro-paneles {
     background-color: #050f1f;
 }
 
@@ -159,11 +159,7 @@ label {
     justify-content: space-between;
 }
 
-.color-fondo {
-    background-color: #1a2638;
-}
-
-.card-color {
+.color-fondo-tarjeta {
     background-color: #1a2638;
 }
 
@@ -188,6 +184,15 @@ label {
 
 .portada-correcciones-de-bug {
     background-image: url("../assets/img/correcciones-de-bug.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    min-height: 300px; 
+}
+
+.thalor {
+    background-image: url("../assets/img/thalor.png");
     background-size: cover;
     background-position: center;
     height: 100%;
