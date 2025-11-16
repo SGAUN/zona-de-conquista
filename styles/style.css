@@ -37,7 +37,7 @@ body {
     Nav Link (Active):    #ffd700 (Dorado más brillante)
 
     breakpoints:
-
+    lg: 992px
 */
 
 h1 {
@@ -194,6 +194,16 @@ label {
 .thalor {
     background-image: url("../assets/img/thalor.png");
     background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    min-height: 300px; 
+}
+
+.imagen-recompensa {
+    background-image: url("../assets/img/recompensa.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     height: 100%;
     width: 100%;
