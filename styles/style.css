@@ -101,11 +101,15 @@ label {
     background-position: center;
     background-repeat: no-repeat;
 }
+.min-h {
+    min-height: 300px;
+}
 
 /* (Home): Portada de inicio */
 .img-portada {
     background-image: url("../assets/img/portada.png");
-    height: 990px;
+    height: 92vh;
+    min-height: 500px;
     background-size: cover;
 }
 .portada-boton {
@@ -123,20 +127,58 @@ label {
 /* (noticia): url de imagenes  */
 .imagen-novedades {
     background-image: url("../assets/img/novedades.png");
-    min-height: 300px;
 }
 .imagen-correcciones-de-bug {
     background-image: url("../assets/img/correcciones-de-bug.png");
-    min-height: 300px;
 }
 
 /* (personajes): url de imagenes */
 .imagen-thalor {
     background-image: url("../assets/img/thalor.png");
-    min-height: 300px;
 }
 .imagen-lunara {
     background-image: url("../assets/img/lunara.png");
-    min-height: 300px;
 }
+
+/* (modos de juego): tabla */
+.estilo-tabla{
+    border-color: #445e7c;
+}
+.estilo-tabla thead th{
+    background-color: #0b1d3a;
+    color: #f9ca24;
+}
+.estilo-tabla tbody td {
+    background-color: #22303f;
+    color: #d6eaf8;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 767.98px) {
+
+    h1 {
+        font-size: 40px; 
+    }
+    h2 {
+        font-size: 30px; 
+    }
+    h3 {
+        font-size: 24px; 
+    }
+    h4 {
+        font-size: 20px; 
+    }
+    .portada-boton {
+        font-size: 16px; 
+    }
+    
+    .container-fluid, .container-xxl {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+
 
