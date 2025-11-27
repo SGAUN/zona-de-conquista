@@ -17,7 +17,7 @@
     <body>
         <!-- header: Encabezado -->
         <header>
-            <nav class="navbar navbar-expand-lg contenedor-fondo-oscuro">
+            <nav class="navbar navbar-expand-lg bg-oscuro">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="../assets/img/logo.png" alt="" class="img-fluid logo-nav" />
@@ -48,7 +48,7 @@
                                 <a class="nav-link" href="./modos.html">Modos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Pre-registro</a>
+                                <a class="nav-link pagina-actual" href="#">Pre-registro</a>
                             </li>
                         </ul>
                     </div>
@@ -58,26 +58,26 @@
 
         <!-- main: Contenido principal -->
         <main>
-            <section class="container-xxl ">
-                <h1 class="my-3 my-md-5">Pre-registro</h1>
+            <section class="container-xxl">
+                <h1>Pre-registro</h1>
 
                 <div class="row">
-                    <div class="col-xl-6 my-2 my-md-3">
-                        <article class="border-dark contenedor-fondo-oscuro h-100 rounded">
-                            <form class="row p-4">
+                    <div class="col-xl-6 celda-modos">
+                        <article class="border-dark bg-oscuro h-100 rounded">
+                            <form class="row form-registro">
                                 <div class="col-12">
-                                    <h3 class="mb-4">Información de Registro</h3>
+                                    <h3>Información de Registro</h3>
                                     <p>Regístrate para recibir acceso anticipado y desbloquear recompensas.</p>
                                 </div>
-                                <div class="col-sm-6 mb-3">
+                                <div class="col-sm-6">
                                     <label for="inputNombre" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="inputNombre" />
                                 </div>
-                                <div class="col-sm-6 mb-3">
+                                <div class="col-sm-6">
                                     <label for="inputEmail" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="inputEmail" />
                                 </div>
-                                <div class="col-12 mb-3">
+                                <div class="col-12">
                                     <label for="inputPais" class="form-label">País</label>
                                     <select id="inputPais" class="form-select">
                                         <option selected>Elegir...</option>
@@ -90,27 +90,31 @@
                                         <option>Otro</option>
                                     </select>
                                 </div>
-                                <div class="col-12 mb-3">
+                                <div class="col-12">
                                     <label for="inputComentario" class="form-label">Comentario</label>
                                     <textarea class="form-control" id="inputComentario" rows="4"></textarea>
                                 </div>
-                                <div class="col-12 mb-3">
+                                <div class="col-12">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="gridCheck" />
                                         <label class="form-check-label" for="gridCheck">recibir notificaciones</label>
                                     </div>
                                 </div>
-                                <div class="col-12 text-end ">
+                                <div class="col-12">
                                     <button type="submit" class="btn btn-primary">Registrarme</button>
                                 </div>
                             </form>
                         </article>
                     </div>
-                    <div class="col-xl-6 my-2 my-md-3">
-                        <article class="card border-dark contenedor-fondo-oscuro h-100">
-                            <img src="../assets/img/pre-registro-recompensa.png" class="card-img-top p-md-2" alt="Modo 1" />
+                    <div class="col-xl-6 celda-modos">
+                        <article class="card border-dark bg-oscuro h-100">
+                            <img
+                                src="../assets/img/pre-registro-recompensa.png"
+                                class="card-img-top p-md-2"
+                                alt="Modo 1"
+                            />
                             <div class="card-body">
-                                <h3 class="mb-4">Recompensas</h3>
+                                <h3>Recompensas</h3>
                                 <ul>
                                     <li>Skin legendaria exclusiva</li>
                                     <li>1000 cristales</li>
@@ -126,22 +130,22 @@
 
         <!-- footer: Pie de pagina -->
         <footer>
-            <section class="contenedor-fondo-oscuro container-fluid p-3">
+            <section class="bg-oscuro estilo-footer container-fluid">
                 <article class="row">
-                    <div class="col-md-4 text-center text-md-start">
-                        <h4 class="mb-md-3">Contacto</h4>
+                    <div class="col-md-4 footer-contacto">
+                        <h4>Contacto</h4>
                         <p>Teléfono: 12 3456-7890</p>
                         <p>Mail: ejemplo@ejemplo.com</p>
                     </div>
 
-                    <div class="col-md-4 text-center">
-                        <h4 class="mb-md-3">Derechos de Autor</h4>
+                    <div class="col-md-4 footer-derechos">
+                        <h4>Derechos de Autor</h4>
                         <p>© 2025 Mi Proyecto. Todos los derechos reservados.</p>
                     </div>
 
-                    <div class="col-md-4 text-center text-md-end">
-                        <h4 class="mb-md-3">Redes</h4>
-                        <ul class="list-unstyled">
+                    <div class="col-md-4 footer-redes">
+                        <h4>Redes</h4>
+                        <ul>
                             <li><a href="">Instagram</a></li>
                             <li><a href="">Twitter</a></li>
                             <li><a href="">YouTube</a></li>
