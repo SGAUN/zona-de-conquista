@@ -59,8 +59,8 @@
         <!-- main: Contenido principal -->
         <main>
             <!-- Portada -->
-            <section class="imagen-portada estilo-portada">
-                <div class="container-fluid">
+            <picture class="imagen-portada estilo-portada">
+                <div class="container-xxl">
                     <h1>Zona de Conquista</h1>
                     <h2>El destino de los Mundos te Espera</h2>
                     <p>Construí tu imperio desde cero...</p>
@@ -70,13 +70,13 @@
                         <a class="btn" href="./pages/pre-registro.html">Pre-regístrate ahora</a>
                     </div>
                 </div>
-            </section>
+            </picture>
 
             <!-- Descripcion -->
-            <section class="bg-oscuro container-xxl estilo-seccion" id="descripcion">
+            <section class="bg-oscuro container-xxl descripcion-juego" id="descripcion">
                 <h2>Fundamentos del juego</h2>
 
-                <article class="row articulo-juego">
+                <article class="row">
                     <div class="col-lg-6">
                         <h4>El destino de los Mundos te Espera</h4>
                         <p>
@@ -90,10 +90,7 @@
                     </div>
                 </article>
 
-                <article class="row articulo-juego">
-                    <div class="col-lg-6">
-                        <img class="img-filtro-oscuro img-fluid" src="./assets/img/inicio-batalla-tactica.png" alt="" />
-                    </div>
+                <article class="row">
                     <div class="col-lg-6">
                         <h4>Batallas tácticas 4 vs 4</h4>
                         <p>
@@ -102,9 +99,12 @@
                             batalla. La cooperación y la estrategia son esenciales para la victoria.
                         </p>
                     </div>
+                    <div class="col-lg-6">
+                        <img class="img-filtro-oscuro img-fluid" src="./assets/img/inicio-batalla-tactica.png" alt="" />
+                    </div>
                 </article>
 
-                <article class="row articulo-juego">
+                <article class="row">
                     <div class="col-lg-6">
                         <h4>Exploración, dominio y legado</h4>
                         <p>
@@ -124,7 +124,7 @@
             </section>
 
             <!-- Mapa -->
-            <section class="bg-oscuro container-xxl estilo-seccion">
+            <section class="bg-oscuro container-xxl">
                 <h2>Mapa</h2>
                 <figure>
                     <div id="carouselExampleIndicators" class="carousel slide">
@@ -204,7 +204,7 @@
 
         <!-- footer: Pie de pagina -->
         <footer>
-            <section class="bg-oscuro estilo-footer container-fluid">
+            <div class="bg-oscuro estilo-footer">
                 <article class="row">
                     <div class="col-md-4 footer-contacto">
                         <h4>Contacto</h4>
@@ -226,7 +226,7 @@
                         </ul>
                     </div>
                 </article>
-            </section>
+            </div>
         </footer>
 
         <!-- BOOTSTRAP JS -->

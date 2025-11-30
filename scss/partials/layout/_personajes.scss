@@ -1,0 +1,26 @@
+.imagen-thalor {
+    background-image: url("../assets/img/personaje-thalor.png");
+}
+.imagen-lunara {
+    background-image: url("../assets/img/personaje-lunara.png");
+}
+.imagen-kael {
+    background-image: url("../assets/img/personaje-kael.png");
+}
+.imagen-volthok {
+    background-image: url("../assets/img/personaje-volthok.png");
+}
+.imagen-lunasa {
+    background-image: url("../assets/img/personaje-lunasa.png");
+}
+.imagen-iron {
+    background-image: url("../assets/img/personaje-iron.png");
+}
+
+@media (max-width: 991px) {
+    .estilo-gameplay {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+}

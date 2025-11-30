@@ -1,428 +1,407 @@
+/* BASE */
 /* Fuente Audiowide */
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* font-family: "Audiowide", sans-serif; */
-
-/* Fuente Audiowide */
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-/* font-family: "Audiowide", sans-serif; */
-
-
 body {
-    font-family: "Audiowide", sans-serif;
-    background-color: #061121;
+  font-family: "Audiowide", sans-serif;
+  background-color: #061121;
 }
 
-/* Propiedades de etiquetas principales */
 h1 {
-    font-size: 60px;
-    color: #f9ca24;
-    margin: 3rem 0;
+  font-size: 60px;
+  color: #f9ca24;
+  margin: 3rem 0;
 }
-h2 {
+@media (max-width: 991px) {
+  h1 {
     font-size: 40px;
-    color: #66fcf1;
+    margin: 1rem 0;
+  }
 }
+
+h2 {
+  font-size: 40px;
+  color: #66fcf1;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 991px) {
+  h2 {
+    font-size: 30px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 h3 {
-    font-size: 40px;
-    color: #7cff44;
+  font-size: 40px;
+  color: #7cff44;
 }
-h4 {
+@media (max-width: 991px) {
+  h3 {
     font-size: 24px;
-    color: #d6eaf8;
-    font-weight: bold;
-    text-decoration: underline;
-}
-p {
-    font-size: 19.2px;
-    color: #d6eaf8;
-}
-a {
-    font-size: 18px;
-    color: #1f8ef1;
-}
-nav ul {
-    list-style: none;
-}
-nav ul li a {
-    color: #00b894;
-    text-decoration: none;
-}
-li {
-    color: #d6eaf8;
-    font-size: 18px;
-}
-table {
-    color: #d6eaf8;
-}
-th {
-    background-color: #1f8ef1;
-    color: #0b1d3a;
-}
-label {
-    color: #a7bcf7;
-    font-weight: bold;
-}
-
-/* (todas): Barra de navegacion */
-.logo-nav {
-    height: 50px;
-    width: auto;
-    border-radius: 10px;
-}
-.navbar-nav .nav-link {
-    font-size: 1.4rem;
-    color: #f0e68c;
-}
-.navbar-nav .pagina-actual {
-    color: #ffd700;
-    text-decoration: underline;
-}
-.menu-button-text {
-    color: #66fcf1;
-    font-size: 1.6rem;
-    border: 2px solid #66fcf1;
-}
-
-/* Utilidades */
-.img-filtro-oscuro {
-    filter: brightness(80%);
-}
-.bg-oscuro {
-    background-color: #1a2638;
-}
-
-/* (Home): Portada de inicio */
-.imagen-portada {
-    background-image: url("../assets/img/inicio-portada.png");
-    background-color: hsla(0, 0%, 0%, 0.25);
-    background-blend-mode: darken;
-}
-
-.estilo-portada {
-    height: 92vh;
-    min-height: 500px;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-
-    background-position: top;
-    background-repeat: no-repeat;
-}
-
-.estilo-portada a {
-    font-size: 20px;
-    padding: 10px 20px;
-    background-color: #0b1d3a;
-    border-color: #f9ca24;
-    color: #f9ca24;
-}
-
-.estilo-portada a:hover {
-    background-color: #0b1d3a;
-    border-color: #66fcf1;
-    color: #66fcf1;
-    text-decoration: underline;
-}
-/* (noticia): url de imagenes  */
-.imagen-novedades {
-    background-image: url("../assets/img/noticias-novedades.png");
-}
-.imagen-correccione {
-    background-image: url("../assets/img/noticias-correcciones-de-bug.png");
-}
-
-/* (personajes): url de imagenes */
-.imagen-thalor {
-    background-image: url("../assets/img/personaje-thalor.png");
-}
-.imagen-lunara {
-    background-image: url("../assets/img/personaje-lunara.png");
-}
-.imagen-kael {
-    background-image: url("../assets/img/personaje-kael.png");
-}
-.imagen-volthok {
-    background-image: url("../assets/img/personaje-volthok.png");
-}
-.imagen-lunasa {
-    background-image: url("../assets/img/personaje-lunasa.png");
-}
-.imagen-iron {
-    background-image: url("../assets/img/personaje-iron.png");
-}
-
-/* (modos de juego): tabla */
-.estilo-tabla {
-    border-color: #445e7c;
-}
-.estilo-tabla thead th {
-    background-color: #0b1d3a;
-    color: #f9ca24;
-}
-.estilo-tabla tbody td {
-    background-color: #22303f;
-    color: #d6eaf8;
-}
-
-/* nuevas aaa */
-/* Cambios implementados */
-.estilo-seccion {
-    /* rounded-3  */
-    border-radius: 0.5rem;
-
-    /* my-md-5  */
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-
-    /* py-1  */
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-}
-
-h2 {
-    /* text-center */
-    text-align: center;
-
-    /* my-md-5 (Valor de PC: 3rem) */
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-.estilo-portada h2 {
-    text-align: left;
-}
-
-.articulo-juego {
-    /* d-flex */
-    display: flex;
-
-    /* align-items-center */
-    align-items: center;
-
-    /* my-3 */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    /* py-3 */
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.articulo-juego .col-lg-6 {
-    /* px-lg-5  */
-    padding-left: 3rem;
-    padding-right: 3rem;
+  }
 }
 
 h4 {
-    /* mb-3 */
-    margin-bottom: 1rem;
+  font-size: 24px;
+  color: #d6eaf8;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+@media (max-width: 991px) {
+  h4 {
+    font-size: 20px;
+  }
 }
 
+h5 {
+  font-size: 40px;
+  background-color: #1c3b4a;
+  color: #ffffff;
+  padding: 16px;
+  margin: 0;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+p {
+  font-size: 18px;
+  color: #d6eaf8;
+}
+
+a {
+  font-size: 18px;
+  color: #1f8ef1;
+}
+
+li {
+  color: #d6eaf8;
+  font-size: 18px;
+}
+
+table {
+  color: #d6eaf8;
+}
+
+th {
+  background-color: #1f8ef1;
+  color: #0b1d3a;
+}
+
+label {
+  color: #a7bcf7;
+  font-weight: bold;
+}
+
+section {
+  border-radius: 0.5rem;
+  margin: 49px 0px;
+  padding: 0.25rem 0;
+}
+@media (max-width: 991px) {
+  section {
+    margin: 16px 0px;
+  }
+}
+@media (max-width: 1400px) {
+  section {
+    border-radius: 0;
+  }
+}
+
+/* COMPONENTES */
+/* FOOTER */
 .estilo-footer {
-    padding: 1rem;
+  padding: 1rem;
 }
-
-/* Estilos descendentes dentro del footer */
 
 .estilo-footer h4 {
-    /* mb-md-3 (Valor de PC: 1rem) */
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .estilo-footer ul {
-    /* list-unstyled */
-    padding-left: 0;
-    list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
 
 .footer-contacto {
-    text-align: left;
+  text-align: left;
 }
 
 .footer-derechos {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-redes {
-    text-align: right;
+  text-align: right;
+}
+
+@media (max-width: 767.98px) {
+  .footer-contacto,
+  .footer-redes {
+    text-align: center;
+  }
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #00b894;
+  text-decoration: none;
+}
+
+.logo-nav {
+  height: 50px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.4rem;
+  color: #f0e68c;
+}
+
+.navbar-nav .pagina-actual {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.menu-button-text {
+  color: #66fcf1;
+  font-size: 1.6rem;
+  border: 2px solid #66fcf1;
 }
 
 .pagina-actual {
-    color: #ffd700;
-    text-decoration: underline;
+  color: #ffd700;
+  text-decoration: underline;
 }
 
-.articulo-juego img {
-    /* rounded-3 */
-    border-radius: 0.5rem;
+/* UTILITES */
+.img-filtro-oscuro {
+  filter: brightness(80%);
 }
 
-.noticia-item {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+.bg-oscuro {
+  background-color: #1a2638;
 }
 
-.lista-ps {
-    /* ps-md-4 (Valor de PC/Tablet: 1.5rem) */
-    padding-left: 1.5rem;
+.celda-grilla {
+  margin: 1rem 0;
 }
-.cuerpo-noticia {
-    /* d-flex flex-column justify-content-between */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.card-cabecera {
-    /* d-flex justify-content-between */
-    display: flex;
-    justify-content: space-between;
+.celda-grilla article {
+  height: 100%;
 }
 
-.figura-estilo {
-    /* min-h */
-    min-height: 300px;
-
-    /* fondo-cubrir-centrar */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* h-100 */
-    height: 100%;
-
-    /* w-100 */
-    width: 100%;
-
-    /* rounded-start: Aplica el radio de borde solo en la esquina izquierda */
-    border-top-left-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+@media (max-width: 991.98px) {
+  .celda-grilla {
+    margin: 0.25rem 0;
+    padding: 0;
+  }
+}
+.estilo-imagen figure {
+  height: 100%;
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
 }
 
-.nombre-personaje {
-    background-color: #1c3b4a;
-    color: #ffffff;
-}
-h5 {
-    font-size: 40px;
-}
-.celda-personaje {
-    /* my-md-3 (Valor de PC/Desktop: 1rem) */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.estilo-imagen {
+  padding: 8px;
+  min-height: 250px;
 }
 
+@media (max-width: 767.98px) {
+  .estilo-imagen figure {
+    min-height: 60vh;
+    border-radius: 0;
+  }
+  .estilo-imagen {
+    padding: 0;
+  }
+}
 .celda-img {
-    /* p-md-2 (Valor de PC/Desktop: 0.5rem) */
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
-.estilo-gameplay {
-    margin: auto;
+@media (max-width: 992px) {
+  .celda-img {
+    padding: 0.25rem;
+  }
 }
-.contenedor-gameplay {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-
-    /* p-3 (Valor de PC/Desktop: 1rem) */
-    padding: 1rem;
+/* LAYOUT */
+.imagen-portada {
+  background-image: url("../assets/img/inicio-portada.png");
+  background-color: hsla(0, 0%, 0%, 0.25);
+  background-blend-mode: darken;
 }
 
-.celda-modos {
-    /* my-md-3 (Valor de PC/Desktop: 1rem) */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.estilo-portada {
+  height: 92vh;
+  min-height: 500px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.estilo-portada a {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #0b1d3a;
+  border-color: #f9ca24;
+  color: #f9ca24;
+}
+
+.estilo-portada a:hover {
+  background-color: #0b1d3a;
+  border-color: #66fcf1;
+  color: #66fcf1;
+  text-decoration: underline;
+}
+
+.estilo-portada h2 {
+  text-align: left;
+}
+
+.descripcion-juego article {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+.descripcion-juego article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.descripcion-juego article div {
+  padding: 0rem 3rem;
+}
+.descripcion-juego article img {
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .descripcion-juego article div {
+    padding: 0;
+    margin: 0;
+  }
+  .estilo-portada a {
+    font-size: 15px;
+    padding: 8px;
+  }
+}
+.imagen-novedades {
+  background-image: url("../assets/img/noticias-novedades.png");
+}
+
+.imagen-correcciones {
+  background-image: url("../assets/img/noticias-correcciones-de-bug.png");
+}
+
+.cuerpo-noticia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-cabecera {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagen-thalor {
+  background-image: url("../assets/img/personaje-thalor.png");
+}
+
+.imagen-lunara {
+  background-image: url("../assets/img/personaje-lunara.png");
+}
+
+.imagen-kael {
+  background-image: url("../assets/img/personaje-kael.png");
+}
+
+.imagen-volthok {
+  background-image: url("../assets/img/personaje-volthok.png");
+}
+
+.imagen-lunasa {
+  background-image: url("../assets/img/personaje-lunasa.png");
+}
+
+.imagen-iron {
+  background-image: url("../assets/img/personaje-iron.png");
+}
+
+@media (max-width: 991px) {
+  .estilo-gameplay {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}
+.estilo-tabla {
+  border-color: #445e7c;
+}
+
+.estilo-tabla thead th {
+  background-color: #0b1d3a;
+  color: #f9ca24;
+}
+
+.estilo-tabla tbody td {
+  background-color: #22303f;
+  color: #d6eaf8;
 }
 
 .estilo-modos-img {
-    padding: 0.5rem;
-    border-radius: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
+@media (max-width: 991.98px) {
+  .estilo-modos-img {
+    padding: 0;
+    border-radius: 0.25rem;
+  }
+  .estilo-tabla {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .form-registro {
-    /* p-4 (Valor fijo: 1.5rem) */
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
-.form-registro > div {
-    /* mb-3 */
-    margin-bottom: 1rem;
+.form-registro > div > div {
+  margin-bottom: 1rem;
 }
 
-.form-registro > div:last-of-type {
-    text-align: right;
+.form-registro > div > div:last-of-type {
+  text-align: right;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 767.98px) {
-    h1 {
-        font-size: 40px;
-    }
-    h2 {
-        font-size: 30px;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-    h3 {
-        font-size: 24px;
-    }
-    h4 {
-        font-size: 20px;
-    }
+/* 
 
-    .portada-boton {
-        font-size: 16px;
-    }
+breakpoints:
 
-    .container-fluid,
-    .container-xxl {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    /* nuevas aaa */
-    h1 {
-        margin: 1rem 0;
-    }
-    .estilo-seccion {
-        /* my-3  */
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    .articulo-juego .col-lg-6 {
-        /* px-1 */
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
-    }
-    .footer-contacto,
-    .footer-redes {
-        /* text-center */
-        text-align: center;
-    }
-    .lista-ps {
-        padding-left: 1rem;
-    }
-    .celda-personaje {
-        /* my-1 (Valor de Móvil: 0.25rem) */
-        margin-top: 0.25rem;
-        margin-bottom: 0.25rem;
-    }
-    .celda-img {
-        /* p-1 (Valor de Móvil: 0.25rem) */
-        padding: 0.25rem;
-    }
-    .celda-modos {
-        /* my-2 (Valor de Móvil: 0.5rem) */
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-}
+lg = 992px
+xxl = 1400px
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .articulo-juego .col-lg-6 {
-        /* px-1 */
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
-    }
-}
+sass --watch scss/main.scss styles/style.css
+
+*/
+
+/*# sourceMappingURL=style.css.map */

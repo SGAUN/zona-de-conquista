@@ -1,0 +1,15 @@
+.form-registro {
+    padding: 1.5rem;
+}
+
+.form-registro > div {
+    > div {
+        margin-bottom: 1rem;
+    }
+}
+
+.form-registro > div {
+    > div:last-of-type {
+        text-align: right;
+    }
+}

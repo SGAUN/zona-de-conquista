@@ -1,0 +1,68 @@
+.imagen-portada {
+    background-image: url("../assets/img/inicio-portada.png");
+    background-color: hsla(0, 0%, 0%, 0.25);
+    background-blend-mode: darken;
+}
+
+.estilo-portada {
+    height: 92vh;
+    min-height: 500px;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.estilo-portada a {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #0b1d3a;
+    border-color: #f9ca24;
+    color: #f9ca24;
+}
+
+.estilo-portada a:hover {
+    background-color: #0b1d3a;
+    border-color: #66fcf1;
+    color: #66fcf1;
+    text-decoration: underline;
+}
+
+.estilo-portada h2 {
+    text-align: left;
+}
+
+.descripcion-juego {
+    article {
+        padding: 1rem 0;
+        margin: 1rem 0;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        div {
+            padding: 0rem 3rem;
+        }
+
+        img {
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .descripcion-juego article div {
+        padding: 0;
+        margin: 0;
+    }
+    .estilo-portada a {
+        font-size: 15px;
+        padding: 8px;
+    }
+}

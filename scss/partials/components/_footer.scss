@@ -1,0 +1,32 @@
+/* FOOTER */
+.estilo-footer {
+    padding: 1rem;
+}
+
+.estilo-footer h4 {
+    margin-bottom: 1rem;
+}
+
+.estilo-footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-contacto {
+    text-align: left;
+}
+
+.footer-derechos {
+    text-align: center;
+}
+
+.footer-redes {
+    text-align: right;
+}
+
+@media (max-width: 767.98px) {
+    .footer-contacto,
+    .footer-redes {
+        text-align: center;
+    }
+}

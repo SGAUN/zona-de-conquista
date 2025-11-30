@@ -1,0 +1,30 @@
+nav ul {
+    list-style: none;
+}
+nav ul li a {
+    color: #00b894;
+    text-decoration: none;
+}
+
+.logo-nav {
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
+}
+.navbar-nav .nav-link {
+    font-size: 1.4rem;
+    color: #f0e68c;
+}
+.navbar-nav .pagina-actual {
+    color: #ffd700;
+    text-decoration: underline;
+}
+.menu-button-text {
+    color: #66fcf1;
+    font-size: 1.6rem;
+    border: 2px solid #66fcf1;
+}
+.pagina-actual {
+    color: #ffd700;
+    text-decoration: underline;
+}

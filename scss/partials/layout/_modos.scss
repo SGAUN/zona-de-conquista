@@ -1,0 +1,27 @@
+.estilo-tabla {
+    border-color: #445e7c;
+}
+.estilo-tabla thead th {
+    background-color: #0b1d3a;
+    color: #f9ca24;
+}
+.estilo-tabla tbody td {
+    background-color: #22303f;
+    color: #d6eaf8;
+}
+
+.estilo-modos-img {
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 991.98px) {
+    .estilo-modos-img {
+        padding: 0;
+        border-radius: 0.25rem;
+    }
+    .estilo-tabla {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
