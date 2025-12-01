@@ -1,12 +1,7 @@
-// scss/partials/layout/_home.scss
+// layout/_home.scss
+
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
-
-$color-portada-btn-bg: #0b1d3a;          // Fondo de los botones de la portada
-$color-portada-btn-default: #f9ca24;     // Color base del botón, borde, y texto
-$color-portada-btn-hover: #66fcf1;       // Color del hover del botón y borde
-$color-portada-blend-mode: hsla(0, 0%, 0%, 0.25); // Color para el efecto darken del fondo
-
 
 .imagen-portada {
     @include background-image("inicio-portada.png");
@@ -24,29 +19,33 @@ $color-portada-blend-mode: hsla(0, 0%, 0%, 0.25); // Color para el efecto darken
     flex-direction: column;
     background-position: top;
     background-repeat: no-repeat;
-    
+    h1,
+    h2 {
+        margin: 1rem 0;
+        padding: 0;
+    }
     h2 {
         text-align: left;
     }
-    
-    a {
-        font-size: 20px;
-        padding: 10px 20px;
-        background-color: $color-portada-btn-bg;
-        border-color: $color-portada-btn-default;
-        color: $color-portada-btn-default;
+}
 
-        &:hover {
-            background-color: $color-portada-btn-bg;
-            border-color: $color-portada-btn-hover;
-            color: $color-portada-btn-hover;
-            text-decoration: underline;
-        }
+.boton-personal {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: $color-fondo-dark-accent;
+    border-color: $color-amarillo-brillante;
+    color: $color-amarillo-brillante;
 
-        @media (max-width: $breakpoint-lg) {
-            font-size: 15px;
-            padding: 8px;
-        }
+    &:hover {
+        background-color: $color-fondo-dark-accent;
+        border-color: $color-celeste-neon;
+        color: $color-celeste-neon;
+        text-decoration: underline;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        font-size: 15px;
+        padding: 8px;
     }
 }
 

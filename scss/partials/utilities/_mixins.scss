@@ -1,4 +1,5 @@
-/* scss/partials/utilities/_mixins.scss */
+// utilities/_mixins.scss
+
 @use "./variables" as *;
 
 @mixin margin-y($valor) {

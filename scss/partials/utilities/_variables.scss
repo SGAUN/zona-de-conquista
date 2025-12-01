@@ -1,20 +1,25 @@
-/* TIPOGRAFIA */
-$color-fondo-principal: #061121; // body
-$color-fondo-oscuro: #1c3b4a; // h5
+// utilities/_variables.scss
 
-$color-titulo-principal: #f9ca24; // h1
-$color-subtitulo-1: #66fcf1; // h2
-$color-subtitulo-2: #7cff44; // h3
+$color-fondo-primario: #061121;
+$color-gris-azul-oscuro: #1c3b4a;
+$color-fondo-secundario: #22303f;
+$color-fondo-dark-accent: #0b1d3a;
 
-$color-texto-principal: #d6eaf8; // h4, p, li, table
-$color-enlace-primario: #1f8ef1; // a, th
-$color-label: #a7bcf7; // label
-$color-fondo-tabla-cabecera: #0b1d3a; // th (color de texto)
+$color-amarillo-brillante: #f9ca24;
+$color-celeste-neon: #66fcf1;
+$color-verde-neon: #7cff44;
+$color-amarillo-claro: #ffd700;
+/* $color-verde-enlace: #00b894; */
+$color-amarillo-pálido: #f0e68c;
 
-/* MIXIN */
-$ruta-imagen : "../assets/img";
+$color-gris-claro: #d6eaf8;
+$color-azul-link: #1f8ef1;
+$color-lila-suave: #a7bcf7;
+$color-gris-borde: #445e7c;
 
-/* BREAKPOINTS */
+$ruta-imagen: "../assets/img";
+$color-portada-blend-mode: hsla(0, 0%, 0%, 0.25);
+
 $breakpoint-xxl: 1400px;
-$breakpoint-lg: 992px; 
-$breakpoint-md: 768px; 
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;

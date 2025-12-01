@@ -1,18 +1,20 @@
-/* scss/partials/base/_tipografia.scss */
+// base/_tipografia.scss
+
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 
 /* Fuente Audiowide */
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* font-family: "Audiowide", sans-serif; */
 
 body {
     font-family: "Audiowide", sans-serif;
-    background-color: $color-fondo-principal;
+    background-color: $color-fondo-primario;
 }
 
 h1 {
     font-size: 60px;
-    color: $color-titulo-principal;
+    color: $color-amarillo-brillante;
     @include margin-y(3rem);
 
     @media (max-width: $breakpoint-lg) {
@@ -23,7 +25,7 @@ h1 {
 
 h2 {
     font-size: 40px;
-    color: $color-subtitulo-1;
+    color: $color-celeste-neon;
     text-align: center;
     @include margin-y(3rem);
     padding-top: 3rem;
@@ -37,7 +39,7 @@ h2 {
 
 h3 {
     font-size: 40px;
-    color: $color-subtitulo-2;
+    color: $color-verde-neon;
 
     @media (max-width: $breakpoint-lg) {
         font-size: 24px;
@@ -46,7 +48,7 @@ h3 {
 
 h4 {
     font-size: 24px;
-    color: $color-texto-principal;
+    color: $color-gris-claro;
     font-weight: bold;
     text-decoration: underline;
     margin-bottom: 1rem;
@@ -59,7 +61,7 @@ h4 {
 h5 {
     font-size: 40px;
     color: #ffffff;
-    background-color: $color-fondo-oscuro;
+    background-color: $color-gris-azul-oscuro;
     padding: 16px;
     margin: 0;
     border-top-left-radius: 0.25rem;
@@ -73,28 +75,28 @@ li {
 }
 
 p {
-    color: $color-texto-principal;
+    color: $color-gris-claro;
 }
 
-a {
-    color: $color-enlace-primario;
-}
+/* a {
+    color: $color-verde-enlace;
+} */
 
 li {
-    color: $color-texto-principal;
+    color: $color-gris-claro;
 }
 
 table {
-    color: $color-texto-principal;
+    color: $color-gris-claro;
 }
 
 th {
-    background-color: $color-enlace-primario;
-    color: $color-fondo-tabla-cabecera;
+    /* background-color: $color-verde-enlace; */
+    color: $color-fondo-dark-accent;
 }
 
 label {
-    color: $color-label;
+    color: $color-lila-suave;
     font-weight: bold;
 }
 

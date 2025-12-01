@@ -1,32 +1,21 @@
-/* BASE */
+// main.scss
+
 @use "./partials/base/reset";
 @use "./partials/base/tipografia";
 
-/* COMPONENTES */
 @use "./partials/components/footer";
 @use "./partials/components/header";
 
-/* UTILITES */
 @use "./partials/utilities/mixins";
 @use "./partials/utilities/variables";
 @use "./partials/utilities/utilities";
 
-/* LAYOUT */
 @use "./partials/layout/home";
 @use "./partials/layout/noticias";
 @use "./partials/layout/personajes";
 @use "./partials/layout/modos";
 @use "./partials/layout/pre-registro";
 
-
-
 /* 
-
-breakpoints:
-
-lg = 992px
-xxl = 1400px
-
-sass --watch scss/main.scss styles/style.css
-
+sass --watch scss/main.scss styles/style.css 
 */

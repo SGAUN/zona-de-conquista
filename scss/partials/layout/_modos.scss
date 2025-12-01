@@ -1,25 +1,19 @@
-/* scss/partials/layout/_modos.scss */
+// layout/_modos.scss
 
 @use "../utilities/mixins" as *;
 @use "../utilities/variables" as *;
 
-$color-tabla-borde: #445e7c; // Color del borde de la tabla
-$color-tabla-cabecera-bg: #0b1d3a; // Fondo de la cabecera (thead th)
-$color-tabla-cabecera-texto: #f9ca24; // Color del texto de la cabecera
-$color-tabla-cuerpo-bg: #22303f; // Fondo del cuerpo (tbody td)
-$color-tabla-cuerpo-texto: #d6eaf8; // Color del texto del cuerpo
-
 .estilo-tabla {
-    border-color: $color-tabla-borde;
+    border-color: $color-gris-borde;
 
     thead th {
-        background-color: $color-tabla-cabecera-bg;
-        color: $color-tabla-cabecera-texto;
+        background-color: $color-fondo-dark-accent;
+        color: $color-amarillo-brillante;
     }
 
     tbody td {
-        background-color: $color-tabla-cuerpo-bg;
-        color: $color-tabla-cuerpo-texto;
+        background-color: $color-fondo-secundario;
+        color: $color-gris-claro;
     }
 
     @media (max-width: $breakpoint-lg) {

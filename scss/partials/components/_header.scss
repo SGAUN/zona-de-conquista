@@ -1,15 +1,12 @@
-// scss/partials/components/_navbar.scss
+// components/_header.scss
 
-$color-enlace-base: #00b894; //  <li><a>
-$color-enlace-nav: #f0e68c; //  barra de navegación
-$color-pagina-actual: #ffd700; // barra de navegación
-$color-menu-toggle: #66fcf1; // boton de menu
+@use "../utilities/variables" as *;
 
 nav ul {
     list-style: none;
 
     li a {
-        color: $color-enlace-base;
+        /* color: $color-verde-enlace; */
         text-decoration: none;
     }
 }
@@ -23,17 +20,17 @@ nav ul {
 .navbar-nav {
     .nav-link {
         font-size: 1.4rem;
-        color: $color-enlace-nav;
+        color: $color-amarillo-pálido;
     }
 
     .pagina-actual {
-        color: $color-pagina-actual;
+        color: $color-amarillo-claro;
         text-decoration: underline;
     }
 }
 
 .menu-button-text {
-    color: $color-menu-toggle;
+    color: $color-celeste-neon;
     font-size: 1.6rem;
-    border: 2px solid $color-menu-toggle;
+    border: 2px solid $color-celeste-neon;
 }
