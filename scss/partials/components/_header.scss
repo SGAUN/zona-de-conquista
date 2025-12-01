@@ -6,7 +6,6 @@ nav ul {
     list-style: none;
 
     li a {
-        /* color: $color-verde-enlace; */
         text-decoration: none;
     }
 }
@@ -14,7 +13,7 @@ nav ul {
 .logo-nav {
     height: 50px;
     width: auto;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .navbar-nav {
