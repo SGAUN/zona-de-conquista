@@ -1,19 +1,25 @@
-/* FOOTER */
+// scss/partials/components/_footer.scss
+@use "../utilities/variables" as *;
+
 .estilo-footer {
     padding: 1rem;
-}
 
-.estilo-footer h4 {
-    margin-bottom: 1rem;
-}
+    h4 {
+        margin-bottom: 1rem;
+    }
 
-.estilo-footer ul {
-    padding-left: 0;
-    list-style: none;
+    ul {
+        padding-left: 0;
+        list-style: none;
+    }
 }
 
 .footer-contacto {
     text-align: left;
+
+    @media (max-width: $breakpoint-lg) {
+        text-align: center;
+    }
 }
 
 .footer-derechos {
@@ -22,11 +28,8 @@
 
 .footer-redes {
     text-align: right;
-}
 
-@media (max-width: 767.98px) {
-    .footer-contacto,
-    .footer-redes {
+    @media (max-width: $breakpoint-lg) {
         text-align: center;
     }
 }

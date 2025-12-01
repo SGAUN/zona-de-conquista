@@ -1,0 +1,22 @@
+/* scss/partials/utilities/_mixins.scss */
+@use "./variables" as *;
+
+@mixin margin-y($valor) {
+    margin-top: $valor;
+    margin-bottom: $valor;
+}
+
+@mixin background-image($nombre-imagen) {
+    background-image: url("#{$ruta-imagen}/#{$nombre-imagen}");
+}
+
+@mixin padding-x($valor) {
+    padding-left: $valor;
+    padding-right: $valor;
+}
+
+@mixin flex-layout($direction: row) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: $direction;
+}

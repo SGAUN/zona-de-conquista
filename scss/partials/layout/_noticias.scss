@@ -1,16 +1,18 @@
+// scss/partials/layout/_noticias.scss
+@use "../utilities/mixins" as *;
+
 .imagen-novedades {
-    background-image: url("../assets/img/noticias-novedades.png");
-}
-.imagen-correcciones {
-    background-image: url("../assets/img/noticias-correcciones-de-bug.png");
-}
-.cuerpo-noticia {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.card-cabecera {
-    display: flex;
-    justify-content: space-between;
+    @include background-image("noticias-novedades.png");
 }
 
+.imagen-correcciones {
+    @include background-image("noticias-correcciones-de-bug.png");
+}
+
+.cuerpo-noticia {
+    @include flex-layout(column);
+}
+
+.card-cabecera {
+    @include flex-layout();
+}

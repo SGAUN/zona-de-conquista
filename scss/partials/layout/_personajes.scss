@@ -1,26 +1,29 @@
+/* scss/partials/layout/_personajes.scss */
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+
 .imagen-thalor {
-    background-image: url("../assets/img/personaje-thalor.png");
+    @include background-image("personaje-thalor.png");
 }
 .imagen-lunara {
-    background-image: url("../assets/img/personaje-lunara.png");
+    @include background-image("personaje-lunara.png");
 }
 .imagen-kael {
-    background-image: url("../assets/img/personaje-kael.png");
+    @include background-image("personaje-kael.png");
 }
 .imagen-volthok {
-    background-image: url("../assets/img/personaje-volthok.png");
+    @include background-image("personaje-volthok.png");
 }
 .imagen-lunasa {
-    background-image: url("../assets/img/personaje-lunasa.png");
+    @include background-image("personaje-lunasa.png");
 }
 .imagen-iron {
-    background-image: url("../assets/img/personaje-iron.png");
+    @include background-image("personaje-iron.png");
 }
 
-@media (max-width: 991px) {
+@media (max-width: $breakpoint-lg) {
     .estilo-gameplay {
-        padding-left: 0;
-        padding-right: 0;
+        @include padding-x(0);
         padding-bottom: 0;
     }
 }

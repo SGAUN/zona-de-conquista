@@ -1,0 +1,20 @@
+/* TIPOGRAFIA */
+$color-fondo-principal: #061121; // body
+$color-fondo-oscuro: #1c3b4a; // h5
+
+$color-titulo-principal: #f9ca24; // h1
+$color-subtitulo-1: #66fcf1; // h2
+$color-subtitulo-2: #7cff44; // h3
+
+$color-texto-principal: #d6eaf8; // h4, p, li, table
+$color-enlace-primario: #1f8ef1; // a, th
+$color-label: #a7bcf7; // label
+$color-fondo-tabla-cabecera: #0b1d3a; // th (color de texto)
+
+/* MIXIN */
+$ruta-imagen : "../assets/img";
+
+/* BREAKPOINTS */
+$breakpoint-xxl: 1400px;
+$breakpoint-lg: 992px; 
+$breakpoint-md: 768px; 

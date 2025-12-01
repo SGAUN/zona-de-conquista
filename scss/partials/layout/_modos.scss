@@ -1,27 +1,38 @@
+/* scss/partials/layout/_modos.scss */
+
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+
+$color-tabla-borde: #445e7c; // Color del borde de la tabla
+$color-tabla-cabecera-bg: #0b1d3a; // Fondo de la cabecera (thead th)
+$color-tabla-cabecera-texto: #f9ca24; // Color del texto de la cabecera
+$color-tabla-cuerpo-bg: #22303f; // Fondo del cuerpo (tbody td)
+$color-tabla-cuerpo-texto: #d6eaf8; // Color del texto del cuerpo
+
 .estilo-tabla {
-    border-color: #445e7c;
-}
-.estilo-tabla thead th {
-    background-color: #0b1d3a;
-    color: #f9ca24;
-}
-.estilo-tabla tbody td {
-    background-color: #22303f;
-    color: #d6eaf8;
+    border-color: $color-tabla-borde;
+
+    thead th {
+        background-color: $color-tabla-cabecera-bg;
+        color: $color-tabla-cabecera-texto;
+    }
+
+    tbody td {
+        background-color: $color-tabla-cuerpo-bg;
+        color: $color-tabla-cuerpo-texto;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        @include padding-x(0);
+    }
 }
 
 .estilo-modos-img {
     padding: 0.5rem;
     border-radius: 1rem;
-}
 
-@media (max-width: 991.98px) {
-    .estilo-modos-img {
+    @media (max-width: $breakpoint-lg) {
         padding: 0;
         border-radius: 0.25rem;
-    }
-    .estilo-tabla {
-        padding-left: 0;
-        padding-right: 0;
     }
 }
