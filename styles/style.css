@@ -357,13 +357,17 @@ nav ul li a {
   background-image: url("../assets/img/personaje-iron.png");
 }
 
+.estilo-gameplay {
+  padding-bottom: 1rem;
+}
 @media (max-width: 992px) {
   .estilo-gameplay {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 0;
+    padding-bottom: 0.5rem;
   }
 }
+
 .estilo-tabla {
   border-color: #445e7c;
 }

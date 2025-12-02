@@ -21,10 +21,11 @@
 .imagen-iron {
     @include background-image("personaje-iron.png");
 }
+.estilo-gameplay {
+    padding-bottom: 1rem;
 
-@media (max-width: $breakpoint-lg) {
-    .estilo-gameplay {
+    @media (max-width: $breakpoint-lg) {
         @include padding-x(0);
-        padding-bottom: 0;
+        padding-bottom: 0.5rem;
     }
 }
