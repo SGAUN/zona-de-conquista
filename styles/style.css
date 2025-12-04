@@ -193,58 +193,6 @@ nav ul li a {
   border: 2px solid #66fcf1;
 }
 
-.img-filtro-oscuro {
-  filter: brightness(80%);
-}
-
-.bg-oscuro {
-  background-color: #1a2638;
-}
-
-.celda-grilla {
-  margin: 1rem 0;
-}
-.celda-grilla article {
-  height: 100%;
-}
-
-@media (max-width: 992px) {
-  .celda-grilla {
-    margin: 0.25rem 0;
-    padding: 0;
-  }
-}
-.estilo-imagen figure {
-  height: 100%;
-  background-size: cover;
-  background-position: center 20%;
-  background-repeat: no-repeat;
-  border-radius: 0.5rem;
-}
-
-.estilo-imagen {
-  padding: 8px;
-  min-height: 250px;
-}
-
-@media (max-width: 768px) {
-  .estilo-imagen figure {
-    min-height: 60vh;
-    border-radius: 0;
-  }
-  .estilo-imagen {
-    padding: 0;
-  }
-}
-.celda-img {
-  padding: 0.5rem;
-}
-
-@media (max-width: 992px) {
-  .celda-img {
-    padding: 0.25rem;
-  }
-}
 .imagen-portada {
   background-image: url("../assets/img/inicio-portada.png");
   background-color: hsla(0, 0%, 0%, 0.25);
@@ -292,16 +240,12 @@ nav ul li a {
 }
 
 .descripcion-juego article {
-  padding: 1rem 0;
-  margin: 1rem 0;
-  display: flex;
   align-items: center;
-}
-.descripcion-juego article:nth-child(even) {
-  flex-direction: row-reverse;
+  padding: 1rem 0rem;
+  margin: 1rem 0rem;
 }
 .descripcion-juego article div {
-  padding: 0rem 3rem;
+  padding: 0rem 3rem 3rem 3rem;
 }
 @media (max-width: 992px) {
   .descripcion-juego article div {
@@ -409,6 +353,58 @@ nav ul li a {
   text-align: right;
 }
 
+.img-filtro-oscuro {
+  filter: brightness(80%);
+}
+
+.bg-oscuro {
+  background-color: #1a2638;
+}
+
+.celda-grilla {
+  margin: 1rem 0;
+}
+.celda-grilla article {
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .celda-grilla {
+    margin: 0.25rem 0;
+    padding: 0;
+  }
+}
+.estilo-imagen figure {
+  height: 100%;
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+}
+
+.estilo-imagen {
+  padding: 8px;
+  min-height: 250px;
+}
+
+@media (max-width: 768px) {
+  .estilo-imagen figure {
+    min-height: 60vh;
+    border-radius: 0;
+  }
+  .estilo-imagen {
+    padding: 0;
+  }
+}
+.celda-img {
+  padding: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .celda-img {
+    padding: 0.25rem;
+  }
+}
 /* 
 sass --watch scss/main.scss styles/style.css 
 */

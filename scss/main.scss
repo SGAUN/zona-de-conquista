@@ -6,15 +6,15 @@
 @use "./partials/components/footer";
 @use "./partials/components/header";
 
-@use "./partials/utilities/mixins";
-@use "./partials/utilities/variables";
-@use "./partials/utilities/utilities";
-
 @use "./partials/layout/home";
 @use "./partials/layout/noticias";
 @use "./partials/layout/personajes";
 @use "./partials/layout/modos";
 @use "./partials/layout/pre-registro";
+
+@use "./partials/utilities/mixins";
+@use "./partials/utilities/variables";
+@use "./partials/utilities/utilities";
 
 /* 
 sass --watch scss/main.scss styles/style.css 
