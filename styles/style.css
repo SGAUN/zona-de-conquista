@@ -250,13 +250,33 @@ nav ul li a {
 @media (max-width: 992px) {
   .descripcion-juego article div {
     padding: 0;
-    margin: 0;
+    margin: 1rem 0rem;
   }
 }
 .descripcion-juego article img {
   border-radius: 0.5rem;
 }
 
+@media (min-width: 992px) {
+  .descripcion-juego article > div:nth-of-type(1) {
+    order: 1;
+  }
+  .descripcion-juego article > div:nth-of-type(2) {
+    order: 0;
+  }
+  .descripcion-juego article > div:nth-of-type(3) {
+    order: 2;
+  }
+  .descripcion-juego article > div:nth-of-type(4) {
+    order: 3;
+  }
+  .descripcion-juego article > div:nth-of-type(5) {
+    order: 5;
+  }
+  .descripcion-juego article > div:nth-of-type(6) {
+    order: 4;
+  }
+}
 .imagen-novedades {
   background-image: url("../assets/img/noticias-novedades.png");
 }
